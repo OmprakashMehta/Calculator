@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: "Lato";
+  margin: 0;
+}
+
+.calculator {
+  background-color: #222;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.display {
+  background-color: #222;
+  color: #fff;
+  font-size: 3em;
+  padding: 20px 30px;
+  text-align: right;
+  height: 160px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.buttons {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+  padding: 20px;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background-color: #444;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+    -4px -4px 10px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.btn:active {
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.1);
+  transform: translateY(2px);
+}
+
+.item1 {
+  background-color: #a5a5a5;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+    -4px -4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.item3 {
+  background-color: #ff9f0a;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+    -4px -4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.numbers,
+.dot {
+  background-color: #444;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+    -4px -4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.itemZero {
+  border-radius: 12px;
+}
